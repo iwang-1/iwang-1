@@ -40,9 +40,9 @@ The project includes Python data processing scripts, a SQLite-backed local datab
 
 ## Technical Stack
 
-**Languages:** Python, Java, C/C++, Scala, JavaScript/TypeScript, SQL, Bash
-**Frameworks/Libraries:** Flask, React, PyTorch, Scikit-learn, LangChain, HuggingFace, JUnit5
-**Tools:** Git, Docker, Linux, AWS EC2/VPC, AWS SDK, CDK, CloudWatch, PostgreSQL, CI/CD
+- **Languages:** Python, Java, C/C++, Scala, JavaScript/TypeScript, SQL, Bash
+- **Frameworks/Libraries:** Flask, React, PyTorch, Scikit-learn, LangChain, HuggingFace, JUnit5
+- **Tools:** Git, Docker, Linux, AWS EC2/VPC, AWS SDK, CDK, CloudWatch, PostgreSQL, CI/CD
 
 ## Links
 
