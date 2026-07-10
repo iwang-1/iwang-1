@@ -1,46 +1,49 @@
 # Hi, I'm Ivan Wang
 
-I'm a Computer Science B.S./M.S. student at the University of Maryland interested in backend systems, machine learning, and research software.
+Computer Science B.S./M.S. student at the University of Maryland, College Park — backend systems, ML/NLP, and research software. Seeking new-grad software engineering roles.
 
-I like building systems that turn messy workflows into something reliable: data pipelines, APIs, ML experiments, research tools, and infrastructure that other people can actually use.
+[LinkedIn](https://www.linkedin.com/in/ivanwang1)
 
-## Featured Work
+## Currently
 
-### Quantum NLP Research
+- Software Engineering Intern (Summer 2026), working on backend systems and cloud infrastructure
+- Building an end-to-end astronomy star-catalog system in public — an ETL pipeline plus a REST API (below)
+- Finishing my M.S. in Computer Science at UMD
 
-I worked on a public UMD FIRE quantum machine learning research project exploring quantum natural language processing for sentence classification.
+## Featured work
 
-The project uses quantum circuit-based NLP methods to classify sentences from a small research dataset. My work focused on supporting experiment datasets, training/evaluation workflows, and reproducible QNLP experiments using Python-based quantum ML tooling.
+### Star Catalog System — ETL pipeline + REST API
 
-**Tech:** Python, Jupyter Notebook, DisCoPy, Qiskit, pytket, quantum NLP
-**Repo:** [FIRE-QML-WINNERS-QNLP](https://github.com/iwang-1/FIRE-QML-WINNERS-QNLP)
+Two personal projects that form one end-to-end system, inspired by my open-source work on the UMD Observatory data archive:
+
+```
+observation CSVs ──▶ star-catalog-ingest ──▶ catalog.db (SQLite) ──▶ star-catalog-api ──▶ JSON
+                     validate · clean · dedupe                       search · filter · stats
+```
+
+- **[star-catalog-ingest](https://github.com/iwang-1/star-catalog-ingest)** — ETL CLI that turns messy telescope observation CSVs into a validated, deduplicated SQLite catalog. Streaming validation with stable reject codes, idempotent hash-gated loads, ~95% test coverage, mypy `--strict`, CI on Python 3.11/3.12.
+- **[star-catalog-api](https://github.com/iwang-1/star-catalog-api)** — typed FastAPI service over that catalog: name search, magnitude/constellation filters, a cone search that handles the RA 0/360 seam, pagination, and stats. Layered architecture, ~97% test coverage, Dockerized, CI green.
+
+*Python · FastAPI · SQLite · pydantic · Docker · GitHub Actions*
+
+### Open source — UMD Observatory CCD Data Archive
+
+**[Four merged pull requests](https://github.com/warnerem/CCD-data-archive/pulls?q=is%3Apr+author%3Aiwang-1+is%3Amerged)** to the upstream repo, [warnerem/CCD-data-archive](https://github.com/warnerem/CCD-data-archive) — a Python / Flask / SQLite archive that makes years of UMD Observatory CCD astronomy data easier to access and search. Working with this data is what inspired the star-catalog projects above.
+
+*Python · Flask · SQLite · JavaScript*
+
+### Quantum NLP research (UMD FIRE)
+
+**[FIRE-QML-WINNERS-QNLP](https://github.com/iwang-1/FIRE-QML-WINNERS-QNLP)** — a 3-person collaborative research project exploring quantum natural language processing for sentence classification. My contributions were the experiment datasets and project documentation.
+
+*Python · DisCoPy · Qiskit · pytket*
+
+## Skills
+
+- **Languages:** Python (primary), Java, C/C++, SQL, JavaScript/TypeScript, Bash
+- **Frameworks:** FastAPI, Flask, PyTorch, scikit-learn
+- **Tools:** Git, Docker, Linux, SQLite/PostgreSQL, AWS, GitHub Actions CI, pytest
 
 ---
 
-### UMD Observatory CCD Data Archive
-
-I contributed to a public research software project for the UMD Observatory that helps make years of CCD astronomy data easier to access, process, and search.
-
-The project includes Python data processing scripts, a SQLite-backed local database workflow, Flask tooling, and a web interface for serving archived observatory data. This work helped turn legacy research data into a more usable archive for students and researchers.
-
-**Tech:** Python, Flask, SQLite, JavaScript, HTML/CSS
-**Repo:** [CCD-data-archive](https://github.com/iwang-1/CCD-data-archive)
-
-## What I Work On
-
-* Backend systems and APIs
-* Machine learning and NLP experiments
-* Research software and data platforms
-* ETL pipelines and database-backed tools
-* Cloud infrastructure, testing, and automation
-
-## Technical Stack
-
-* **Languages:** Python, Java, C/C++, Scala, JavaScript/TypeScript, SQL, Bash
-* **Frameworks/Libraries:** Flask, React, PyTorch, Scikit-learn, LangChain, HuggingFace, JUnit5
-* **Tools:** Git, Docker, Linux, AWS EC2/VPC, AWS SDK, CDK, CloudWatch, PostgreSQL, CI/CD
-
-## Links
-
-* [LinkedIn](https://www.linkedin.com/in/ivanwang1)
-* [GitHub](https://github.com/iwang-1)
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=iwang-1&layout=compact&langs_count=6&hide=jupyter%20notebook,html,css" alt="Top languages" />
