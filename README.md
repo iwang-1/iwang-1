@@ -39,6 +39,8 @@ observation CSVs ──▶ star-catalog-ingest ──▶ catalog.db (SQLite) ─
 
 **[FIRE-QML-WINNERS-QNLP](https://github.com/iwang-1/FIRE-QML-WINNERS-QNLP)** — a 3-person collaborative research project exploring quantum natural language processing for sentence classification. My contributions were dataset preparation and integration, and the project documentation.
 
+Also: an **[open pull request to Quantinuum/lambeq](https://github.com/Quantinuum/lambeq/pull/259)**, the quantum NLP library — allow overriding the model download URL via `LAMBEQ_MODELS_URL` (open, not yet merged).
+
 *Python · DisCoPy · Qiskit · pytket*
 
 ## Skills
