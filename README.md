@@ -19,6 +19,8 @@ Three personal projects that form one end-to-end system, plus an ML companion tr
 ```
 observation CSVs ──▶ star-catalog-ingest ──▶ catalog.db (SQLite) ──▶ star-catalog-api ──▶ star-catalog-web
                      validate · clean · dedupe                       search · filter · stats  sky map · search UI
+
+star-catalog-web ──▶ stars.json (HYG snapshot) ──▶ star-spectral-classifier (OBAFGKM from B–V)
 ```
 
 - **[star-catalog-ingest](https://github.com/iwang-1/star-catalog-ingest)** — ETL CLI that turns messy telescope observation CSVs into a validated, deduplicated SQLite catalog. Streaming validation with stable reject codes, idempotent hash-gated loads, ~95% test coverage, mypy `--strict`, CI on Python 3.11–3.14.
