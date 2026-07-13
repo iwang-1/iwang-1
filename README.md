@@ -1,11 +1,9 @@
 # Hi, I'm Ivan Wang
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/star-banner-dark.svg">
-  <img alt="All-sky star field — every star in the HYG snapshot behind the star-catalog projects below, plotted by RA/Dec with magnitude-scaled sizes and B–V-indexed colors" src="assets/star-banner-light.svg" width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="assets/workbench-banner-dark.svg">
+  <img alt="Workbench banner: a row of mechanical keycaps spelling I, V, A, N in serif letters plus one burnt-orange Return key, resting on a bench edge on a cream paper card. Beside the keys, the hero line in serif type: 'I build software / the way I build keyboards — / carefully, end to end.' Below, a small monospace footer: 'keyboards · pc builds · climbing' and 'iwang-1.github.io'." src="assets/workbench-banner-light.svg" width="100%">
 </picture>
-
-*Rendered by [`scripts/make_star_banner.py`](scripts/make_star_banner.py) from the same 8,920-star HYG snapshot the sky map below serves — real positions, magnitudes, and B–V colors.*
 
 Computer Science B.S./M.S. student at the University of Maryland, College Park — backend systems, ML/NLP, and research software. Seeking new-grad software engineering roles.
 
@@ -14,8 +12,9 @@ Computer Science B.S./M.S. student at the University of Maryland, College Park �
 ## Currently
 
 - Software Engineering Intern (Summer 2026), working on backend systems and cloud infrastructure
-- Building an end-to-end astronomy star-catalog system — an ETL pipeline, a REST API, an interactive sky map, and an ML spectral classifier (below)
+- Building star-catalog, an end-to-end system in the astronomy domain — an ETL pipeline, a REST API, an interactive sky map, and an ML spectral classifier (below)
 - Finishing my M.S. in Computer Science at UMD
+- Away from the keyboard: building mechanical keyboards and PCs, and climbing
 
 ## Featured work
 
