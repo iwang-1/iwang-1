@@ -1,10 +1,10 @@
 <div align="center">
 
-<img width="100%" alt="Ivan Wang — backend systems · ML/NLP · research software" src="https://capsule-render.vercel.app/api?type=waving&color=0:FF5F6D,50:A855F7,100:38BDF8&height=210&section=header&text=Ivan%20Wang&fontSize=62&fontColor=ffffff&animation=fadeIn&fontAlignY=36&desc=backend%20systems%20%C2%B7%20ML%2FNLP%20%C2%B7%20research%20software&descSize=18&descAlignY=57">
+<img width="100%" alt="Ivan Wang — backend systems · ML/NLP · research software" src="https://capsule-render.vercel.app/api?type=waving&color=0:102A43,50:1D4ED8,100:38BDF8&height=210&section=header&text=Ivan%20Wang&fontSize=62&fontColor=ffffff&animation=fadeIn&fontAlignY=36&desc=backend%20systems%20%C2%B7%20ML%2FNLP%20%C2%B7%20research%20software&descSize=18&descAlignY=57">
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://readme-typing-svg.demolab.com/?font=Fira+Code&weight=600&size=20&pause=1000&color=F472B6&center=true&vCenter=true&width=640&height=44&lines=Hi%2C+I'm+Ivan+%F0%9F%91%8B;CS+B.S.%2FM.S.+%40+UMD+College+Park;SWE+Intern+(Summer+2026)+%E2%80%94+backend+%2B+cloud+infra;Seeking+new-grad+SWE+roles;I+build+keyboards%2C+PCs%2C+and+backend+systems;Climbing+when+I'm+not+compiling">
-  <img alt="Hi, I'm Ivan — CS B.S./M.S. @ UMD College Park — SWE Intern (Summer 2026) — seeking new-grad SWE roles" src="https://readme-typing-svg.demolab.com/?font=Fira+Code&weight=600&size=20&pause=1000&color=DB2777&center=true&vCenter=true&width=640&height=44&lines=Hi%2C+I'm+Ivan+%F0%9F%91%8B;CS+B.S.%2FM.S.+%40+UMD+College+Park;SWE+Intern+(Summer+2026)+%E2%80%94+backend+%2B+cloud+infra;Seeking+new-grad+SWE+roles;I+build+keyboards%2C+PCs%2C+and+backend+systems;Climbing+when+I'm+not+compiling">
+  <source media="(prefers-color-scheme: dark)" srcset="https://readme-typing-svg.demolab.com/?font=Fira+Code&weight=600&size=20&pause=1000&color=F472B6&center=true&vCenter=true&width=640&height=44&lines=Hi%2C+I'm+Ivan+%F0%9F%91%8B;CS+B.S.%2FM.S.+%40+UMD+College+Park;AWS+SDE+Intern+(Summer+2026)+%E2%80%94+backend+%2B+cloud+infra;Seeking+new-grad+SWE+roles;I+build+keyboards%2C+PCs%2C+and+backend+systems;Climbing+when+I'm+not+compiling">
+  <img alt="Hi, I'm Ivan — CS B.S./M.S. @ UMD College Park — AWS SDE Intern (Summer 2026) — seeking new-grad SWE roles" src="https://readme-typing-svg.demolab.com/?font=Fira+Code&weight=600&size=20&pause=1000&color=DB2777&center=true&vCenter=true&width=640&height=44&lines=Hi%2C+I'm+Ivan+%F0%9F%91%8B;CS+B.S.%2FM.S.+%40+UMD+College+Park;AWS+SDE+Intern+(Summer+2026)+%E2%80%94+backend+%2B+cloud+infra;Seeking+new-grad+SWE+roles;I+build+keyboards%2C+PCs%2C+and+backend+systems;Climbing+when+I'm+not+compiling">
 </picture>
 
 <p>
@@ -23,7 +23,7 @@
 <h3>The short version</h3>
 <ul>
   <li>🎓 <b>CS B.S./M.S.</b> — University of Maryland, College Park (finishing the M.S.)</li>
-  <li>☁️ <b>SWE Intern (Summer 2026)</b> — backend systems &amp; cloud infrastructure</li>
+  <li>☁️ <b>SDE Intern @ AWS (Summer 2026)</b> — backend systems &amp; cloud infrastructure</li>
   <li>🧠 Happiest around <b>backend systems, ML/NLP, and research software</b></li>
   <li>🎯 <b>Seeking new-grad software engineering roles</b></li>
   <li>⛰️ Otherwise: building mechanical keyboards, building PCs, climbing</li>
@@ -43,7 +43,7 @@
 </tr>
 </table>
 
-<img width="100%" height="4" alt="" src="https://capsule-render.vercel.app/api?type=rect&color=0:FF5F6D,50:A855F7,100:38BDF8&height=4">
+<img width="100%" height="4" alt="" src="https://capsule-render.vercel.app/api?type=rect&color=0:102A43,50:1D4ED8,100:38BDF8&height=4">
 
 ## 🚀 Featured builds
 
@@ -115,7 +115,7 @@
 </tr>
 </table>
 
-<img width="100%" height="4" alt="" src="https://capsule-render.vercel.app/api?type=rect&color=0:38BDF8,50:A855F7,100:FF5F6D&height=4">
+<img width="100%" height="4" alt="" src="https://capsule-render.vercel.app/api?type=rect&color=0:38BDF8,50:1D4ED8,100:102A43&height=4">
 
 ## 🧰 Toolbox
 
@@ -127,7 +127,7 @@
 
 </div>
 
-<img width="100%" height="4" alt="" src="https://capsule-render.vercel.app/api?type=rect&color=0:FF5F6D,50:A855F7,100:38BDF8&height=4">
+<img width="100%" height="4" alt="" src="https://capsule-render.vercel.app/api?type=rect&color=0:102A43,50:1D4ED8,100:38BDF8&height=4">
 
 ## ⛰️ Off the clock
 
@@ -159,6 +159,6 @@
 
 <sub>Thanks for stopping by.</sub>
 
-<img width="100%" alt="" src="https://capsule-render.vercel.app/api?type=waving&color=0:38BDF8,50:A855F7,100:FF5F6D&height=110&section=footer">
+<img width="100%" alt="" src="https://capsule-render.vercel.app/api?type=waving&color=0:38BDF8,50:1D4ED8,100:102A43&height=110&section=footer">
 
 </div>
