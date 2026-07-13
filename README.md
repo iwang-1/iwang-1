@@ -38,6 +38,12 @@ star-catalog-web ──▶ stars.json (HYG snapshot) ──▶ star-spectral-cla
 
 *Python · Flask · SQLite · JavaScript*
 
+### Cross-domain sentiment under domain shift — DistilBERT + DANN
+
+**[cross-domain-sentiment-dann](https://github.com/iwang-1/cross-domain-sentiment-dann)** — domain generalization for sentiment classification across Yelp, Amazon, Twitter, and Reddit, evaluated leave-one-domain-out on a held-out platform the model never saw in training. A domain-adversarial network (gradient-reversal layer on a shared DistilBERT encoder) lifts held-out-domain accuracy from a near-random 50.8% baseline to 67.7% on average — 74.2% at best, on Yelp — on ~1,000-example-per-domain subsets. The README says plainly that an off-the-shelf SST-2 model still wins outright; the result is how much of the domain-shift gap adversarial training recovers under data scarcity, not a new state of the art. UMD CMSC472 team project.
+
+*Python · PyTorch · Hugging Face Transformers · DistilBERT*
+
 ### Quantum NLP research (UMD FIRE)
 
 **[FIRE-QML-WINNERS-QNLP](https://github.com/iwang-1/FIRE-QML-WINNERS-QNLP)** — a 3-person collaborative research project exploring quantum natural language processing for sentence classification. My contributions were dataset preparation and integration, and the project documentation.
