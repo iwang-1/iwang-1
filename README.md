@@ -1,10 +1,5 @@
 # Hi, I'm Ivan Wang
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/workbench-banner-dark.svg">
-  <img alt="Workbench banner: a row of mechanical keycaps spelling I, V, A, N in serif letters plus one burnt-orange Return key, resting on a bench edge on a cream paper card. Beside the keys, the hero line in serif type: 'I build software / the way I build keyboards — / carefully, end to end.' Below, a small monospace footer: 'keyboards · pc builds · climbing' and 'iwang-1.github.io'." src="assets/workbench-banner-light.svg" width="100%">
-</picture>
-
 Computer Science B.S./M.S. student at the University of Maryland, College Park — backend systems, ML/NLP, and research software. Seeking new-grad software engineering roles.
 
 [LinkedIn](https://www.linkedin.com/in/ivanwang1) · [Personal site](https://iwang-1.github.io/)
@@ -12,35 +7,14 @@ Computer Science B.S./M.S. student at the University of Maryland, College Park �
 ## Currently
 
 - Software Engineering Intern (Summer 2026), working on backend systems and cloud infrastructure
-- Building star-catalog, an end-to-end system in the astronomy domain — an ETL pipeline, a REST API, an interactive sky map, and an ML spectral classifier (below)
 - Finishing my M.S. in Computer Science at UMD
 - Away from the keyboard: building mechanical keyboards and PCs, and climbing
 
 ## Featured work
 
-### Star Catalog System — ETL pipeline + REST API + sky map + ML classifier
-
-Three personal projects that form one end-to-end system, plus an ML companion trained on its data — inspired by my open-source work on the UMD Observatory data archive:
-
-```
-observation CSVs ──▶ star-catalog-ingest ──▶ catalog.db (SQLite) ──▶ star-catalog-api ──▶ star-catalog-web
-                     validate · clean · dedupe                       search · filter · stats  sky map · search UI
-
-star-catalog-web ──▶ stars.json (HYG snapshot) ──▶ star-spectral-classifier (OBAFGKM from B–V)
-```
-
-- **[star-catalog-ingest](https://github.com/iwang-1/star-catalog-ingest)** — ETL CLI that turns messy telescope observation CSVs into a validated, deduplicated SQLite catalog. Streaming validation with stable reject codes, idempotent hash-gated loads, ~95% test coverage, mypy `--strict`, CI on Python 3.11–3.14.
-- **[star-catalog-api](https://github.com/iwang-1/star-catalog-api)** — typed FastAPI service over that catalog: name search, magnitude and catalog-designation-prefix filters, a cone search that handles the RA 0/360 seam, pagination, and stats. Layered architecture, ~97% test coverage, Dockerized, CI on Python 3.11/3.12.
-- **[star-catalog-web](https://github.com/iwang-1/star-catalog-web)** — interactive sky map and searchable catalog of 8,920 naked-eye HYG stars (React + TypeScript + Vite): magnitude-scaled, color-indexed star markers, linked map/table selection, and live search. Verified end-to-end in headless Chromium with Playwright. **[Live demo](https://iwang-1.github.io/star-catalog-web/)**
-- **[star-spectral-classifier](https://github.com/iwang-1/star-spectral-classifier)** — ML companion that predicts OBAFGKM spectral class from B–V color on the sky map's HYG snapshot. Built to beat a 72% textbook-physics baseline honestly — 79.5% accuracy / 0.665 macro-F1 on a seeded stratified hold-out, a per-class error analysis that owns the O class it never gets right, mypy `--strict`, CI on Python 3.11–3.13.
-
-<a href="https://iwang-1.github.io/star-catalog-web/"><img src="assets/star-catalog-web-screenshot.png" alt="star-catalog-web — sky map and searchable catalog table (click for the live demo)" width="800" /></a>
-
-*Python · FastAPI · SQLite · pydantic · scikit-learn · TypeScript · React · Docker · GitHub Actions*
-
 ### Open source — UMD Observatory CCD Data Archive
 
-**[Four merged pull requests](https://github.com/warnerem/CCD-data-archive/pulls?q=is%3Apr+author%3Aiwang-1+is%3Amerged)** to the upstream repo, [warnerem/CCD-data-archive](https://github.com/warnerem/CCD-data-archive) — a Python / Flask / SQLite archive that makes years of UMD Observatory CCD astronomy data easier to access and search. Working with this data is what inspired the star-catalog projects above.
+**[Four merged pull requests](https://github.com/warnerem/CCD-data-archive/pulls?q=is%3Apr+author%3Aiwang-1+is%3Amerged)** to the upstream repo, [warnerem/CCD-data-archive](https://github.com/warnerem/CCD-data-archive) — a Python / Flask / SQLite archive that makes years of UMD Observatory CCD astronomy data easier to access and search.
 
 *Python · Flask · SQLite · JavaScript*
 
