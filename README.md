@@ -69,7 +69,6 @@
 <td width="50%" valign="top">
 <h3>🧪 cross-domain-sentiment-dann</h3>
 <p>
-  <img alt="UMD CMSC472" src="https://img.shields.io/badge/UMD-CMSC472-8B5CF6?style=flat-square">
   <img alt="team project" src="https://img.shields.io/badge/-team_project-A855F7?style=flat-square">
 </p>
 <p>Can a sentiment model survive a domain it has never seen? Leave-one-domain-out across <b>Yelp · Amazon · Twitter · Reddit</b>: a DANN (gradient reversal on a shared DistilBERT) lifts held-out accuracy from a <b>50.8%</b> baseline to <b>67.7% avg</b> — <b>74.2%</b> best (Yelp) — on ~1,000-example-per-domain subsets.</p>
