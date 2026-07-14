@@ -10,6 +10,7 @@
 <p>
   <a href="https://www.linkedin.com/in/ivanwang1"><img alt="LinkedIn: ivanwang1" src="https://custom-icon-badges.demolab.com/badge/LinkedIn-ivanwang1-0A66C2?style=for-the-badge&logo=linkedin-white&logoColor=white"></a>
   <a href="https://iwang-1.github.io/"><img alt="Personal site" src="https://img.shields.io/badge/Portfolio-iwang--1.github.io-8B5CF6?style=for-the-badge&logo=githubpages&logoColor=white"></a>
+  <a href="mailto:ivanwang8989@gmail.com"><img alt="Email: ivanwang8989@gmail.com" src="https://img.shields.io/badge/Email-ivanwang8989@gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white"></a>
   <a href="https://www.linkedin.com/in/ivanwang1"><img alt="Seeking new-grad SWE roles" src="https://img.shields.io/badge/seeking-new--grad_SWE_roles-16a34a?style=for-the-badge"></a>
 </p>
 
@@ -90,13 +91,14 @@
   <img alt="3-person research project" src="https://img.shields.io/badge/research-3--person_team-38BDF8?style=flat-square">
 </p>
 <p>Quantum NLP for sentence classification. My slice of the project: <b>dataset prep, integration, and docs</b> — the glue that turns three people's research code into one thing that runs.</p>
+<p><sub>📈 Enhanced optimizers beat a default-gain SPSA baseline by <b>~30 points</b> of train/test accuracy (exact noiseless simulation).</sub></p>
 <p>
   <img alt="Python" src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white">
   <img alt="DisCoPy" src="https://img.shields.io/badge/DisCoPy-FF5F6D?style=flat-square">
   <img alt="Qiskit" src="https://img.shields.io/badge/Qiskit-6929C4?style=flat-square&logo=qiskit&logoColor=white">
   <img alt="pytket" src="https://img.shields.io/badge/pytket-0F766E?style=flat-square">
 </p>
-<a href="https://github.com/iwang-1/FIRE-QML-WINNERS-QNLP"><b>Explore the repo →</b></a>
+<a href="https://github.com/iwang-1/FIRE-QML-WINNERS-QNLP"><b>Explore the repo →</b></a> · <a href="https://nbviewer.org/github/iwang-1/FIRE-QML-WINNERS-QNLP/blob/main/code/mc_task_simulation.ipynb"><b>Run the notebook ↗</b></a>
 </td>
 <td width="50%" valign="top">
 <h3>🌍 PRs in the wild</h3>
