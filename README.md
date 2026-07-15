@@ -1,160 +1,97 @@
 <div align="center">
 
-<img width="100%" alt="Ivan Wang — backend systems · ML/NLP · research software" src="https://capsule-render.vercel.app/api?type=waving&color=0:102A43,50:1D4ED8,100:38BDF8&height=210&section=header&text=Ivan%20Wang&fontSize=62&fontColor=ffffff&animation=fadeIn&fontAlignY=36&desc=backend%20systems%20%C2%B7%20ML%2FNLP%20%C2%B7%20research%20software&descSize=18&descAlignY=57">
+<img width="100%" alt="Ivan Wang - distributed systems, backend engineering, and ML/NLP" src="https://capsule-render.vercel.app/api?type=waving&color=0:0C2438,55:0891B2,100:22D3EE&height=215&section=header&text=Ivan%20Wang&fontSize=62&fontColor=F4F8F9&animation=fadeIn&fontAlignY=36&desc=systems%20that%20stay%20correct%20when%20parts%20fail&descSize=18&descAlignY=57">
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://readme-typing-svg.demolab.com/?font=Fira+Code&weight=600&size=20&pause=1000&color=F472B6&center=true&vCenter=true&width=640&height=44&lines=Hi%2C+I'm+Ivan+%F0%9F%91%8B;AWS+SDE+Intern+(Summer+2026)+%E2%80%94+backend+%2B+cloud+infra;Seeking+new-grad+SWE+roles;CS+B.S.%2FM.S.+%40+UMD+College+Park;I+build+keyboards%2C+PCs%2C+and+backend+systems;Climbing+when+I'm+not+compiling">
-  <img alt="Hi, I'm Ivan — AWS SDE Intern (Summer 2026) — seeking new-grad SWE roles — CS B.S./M.S. @ UMD College Park" src="https://readme-typing-svg.demolab.com/?font=Fira+Code&weight=600&size=20&pause=1000&color=DB2777&center=true&vCenter=true&width=640&height=44&lines=Hi%2C+I'm+Ivan+%F0%9F%91%8B;AWS+SDE+Intern+(Summer+2026)+%E2%80%94+backend+%2B+cloud+infra;Seeking+new-grad+SWE+roles;CS+B.S.%2FM.S.+%40+UMD+College+Park;I+build+keyboards%2C+PCs%2C+and+backend+systems;Climbing+when+I'm+not+compiling">
-</picture>
+**Distributed systems &middot; storage engines &middot; backend infrastructure &middot; ML/NLP**
 
 <p>
-  <a href="https://www.linkedin.com/in/ivanwang1"><img alt="LinkedIn: ivanwang1" src="https://custom-icon-badges.demolab.com/badge/LinkedIn-ivanwang1-0A66C2?style=for-the-badge&logo=linkedin-white&logoColor=white"></a>
-  <img alt="SDE Intern @ AWS (Summer 2026)" src="https://custom-icon-badges.demolab.com/badge/AWS-SDE_Intern_(Summer_2026)-1D4ED8?style=for-the-badge&logo=aws&logoColor=white">
+  <img alt="AWS SDE Intern, Summer 2026" src="https://img.shields.io/badge/AWS-SDE_Intern_%C2%B7_Summer_2026-FF9900?style=for-the-badge&logo=amazonwebservices&logoColor=111827">
+  <img alt="UMD Computer Science BS/MS, May 2027" src="https://img.shields.io/badge/UMD-CS_B.S.%2FM.S._%C2%B7_May_2027-0C2438?style=for-the-badge">
+  <img alt="Seeking new graduate software engineering roles" src="https://img.shields.io/badge/New_Grad-SWE_%C2%B7_2027-0891B2?style=for-the-badge">
 </p>
 <p>
-  <a href="https://iwang-1.github.io/"><img alt="Personal site" src="https://img.shields.io/badge/Portfolio-iwang--1.github.io-8B5CF6?style=for-the-badge&logo=githubpages&logoColor=white"></a>
-  <a href="mailto:ivanwang8989@gmail.com"><img alt="Email: ivanwang8989@gmail.com" src="https://img.shields.io/badge/Email-ivanwang8989@gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white"></a>
+  <a href="https://iwang-1.github.io/"><img alt="Portfolio" src="https://img.shields.io/badge/Portfolio-iwang--1.github.io-0891B2?style=for-the-badge&logo=githubpages&logoColor=white"></a>
+  <a href="https://www.linkedin.com/in/ivanwang1"><img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-ivanwang1-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"></a>
+  <a href="mailto:ivanwang8989@gmail.com"><img alt="Email Ivan Wang" src="https://img.shields.io/badge/Email-ivanwang8989%40gmail.com-0E7490?style=for-the-badge&logo=gmail&logoColor=white"></a>
 </p>
 
 </div>
 
-## 👨‍💻 About
+## About
 
-<table>
-<tr>
-<td width="55%" valign="top">
-<h3>The short version</h3>
-<ul>
-  <li>🎓 <b>CS B.S./M.S.</b> — University of Maryland, College Park (finishing the M.S.)</li>
-  <li>☁️ <b>SDE Intern @ AWS (Summer 2026)</b> — backend systems &amp; cloud infrastructure</li>
-  <li>🧠 Happiest around <b>backend systems, ML/NLP, and research software</b></li>
-  <li>🎯 <b>Seeking new-grad software engineering roles</b></li>
-  <li>⛰️ Otherwise: building mechanical keyboards, building PCs, climbing</li>
-</ul>
-</td>
-<td width="45%" valign="middle" align="center">
-<p>
-  <img alt="Upstream PRs: 4 merged, 1 open" src="https://img.shields.io/badge/upstream_PRs-4_merged_%C2%B7_1_open-2ea043?style=flat-square&logo=git&logoColor=white">
-  <br>
-  <sub>full PR story in <a href="#-featured-builds">Featured builds</a> ↓</sub>
-</p>
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats-sigma-five.vercel.app/api?username=iwang-1&show_icons=true&hide_border=true&count_private=true&include_all_commits=true&hide=stars%2Cissues%2Cprs&card_width=440&bg_color=0d1117&title_color=f472b6&text_color=c9d1d9&icon_color=58a6ff&ring_color=a855f7">
-  <img width="440" alt="Ivan's GitHub stats" src="https://github-readme-stats-sigma-five.vercel.app/api?username=iwang-1&show_icons=true&hide_border=true&count_private=true&include_all_commits=true&hide=stars%2Cissues%2Cprs&card_width=440&bg_color=ffffff&title_color=db2777&text_color=24292f&icon_color=0969da&ring_color=8b5cf6">
-</picture>
-</td>
-</tr>
-</table>
+I'm a software engineer focused on **distributed systems, storage, and backend infrastructure**. I like software whose correctness can be tested under crashes, partitions, delayed messages, and hostile schedules, not just on the happy path.
 
-<img width="100%" height="4" alt="" src="https://capsule-render.vercel.app/api?type=rect&color=0:102A43,50:1D4ED8,100:38BDF8&height=4">
+- **SDE Intern at AWS (Summer 2026):** backend systems and cloud infrastructure
+- **B.S./M.S. in Computer Science at UMD:** Departmental Honors research track, graduating May 2027
+- **Open source:** four merged pull requests in the UMD Observatory archive and one upstream lambeq PR under review
+- **Seeking:** new-grad software engineering roles starting Summer 2027
 
-## 🚀 Featured builds
+## Featured Systems
 
 <table>
 <tr>
 <td width="50%" valign="top">
-<h3>🧪 cross-domain-sentiment-dann</h3>
+<h3><a href="https://github.com/iwang-1/parallax-kv">parallax-kv</a></h3>
+<p><b>Three-node Raft key-value store in Go</b></p>
+<p>PreVote, ReadIndex, persist-before-send ordering, snapshots, a durable WAL, gRPC, and deterministic fault simulation.</p>
+<p><b>1,400 fault scenarios</b> and <b>2,914,245 client operations</b> with zero safety or linearizability violations.</p>
 <p>
-  <img alt="team project" src="https://img.shields.io/badge/team_project-A855F7?style=flat-square">
+  <img alt="Go" src="https://img.shields.io/badge/Go-00ADD8?style=flat-square&logo=go&logoColor=white">
+  <img alt="Raft" src="https://img.shields.io/badge/Raft-0E7490?style=flat-square">
+  <img alt="gRPC" src="https://img.shields.io/badge/gRPC-244C5A?style=flat-square&logo=google&logoColor=white">
 </p>
-<p>Can a sentiment model survive a domain it has never seen? Leave-one-domain-out across <b>Yelp · Amazon · Twitter · Reddit</b>: a DANN (gradient reversal on a shared DistilBERT) lifts held-out accuracy from a <b>50.8%</b> baseline to <b>67.7% avg</b> — <b>74.2%</b> best (Yelp) — on ~1,000-example-per-domain subsets.</p>
-<p><sub>⚖️ Full honesty: an off-the-shelf SST-2 model still wins on the review domains and on average. We report it anyway.</sub></p>
-<p>
-  <img alt="Python" src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white">
-  <img alt="PyTorch" src="https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white">
-  <img alt="HF Transformers" src="https://img.shields.io/badge/HF_Transformers-FFD21E?style=flat-square&logo=huggingface&logoColor=000">
-  <img alt="DistilBERT" src="https://img.shields.io/badge/DistilBERT-8B5CF6?style=flat-square">
-</p>
-<a href="https://github.com/iwang-1/cross-domain-sentiment-dann"><b>Explore the repo →</b></a>
 </td>
 <td width="50%" valign="top">
-<h3>🔭 UMD Observatory · CCD Data Archive</h3>
+<h3><a href="https://github.com/iwang-1/accretion-db">accretion-db</a></h3>
+<p><b>Crash-tested LSM-tree engine in safe Rust</b></p>
+<p>CRC-framed WAL, group commit, memtables, block SSTables, bloom filters, compaction, and a fault-injecting storage layer.</p>
+<p><b>2,640 crash executions</b> with zero acknowledged-write loss; about <b>29x WAL-bound</b> group-commit throughput.</p>
 <p>
-  <img alt="open-source contributor" src="https://img.shields.io/badge/open--source_contributor-2ea043?style=flat-square">
-  <img alt="4 merged PRs" src="https://img.shields.io/badge/PRs-4_merged-2ea043?style=flat-square&logo=git&logoColor=white">
-</p>
-<p>A Python/Flask/SQLite archive of UMD Observatory CCD astronomy data — with <b>four merged PRs</b> upstream to <a href="https://github.com/warnerem/CCD-data-archive">warnerem/CCD-data-archive</a>.</p>
-<p><sub>🔀 Not a fork — changes proposed and landed in someone else's codebase, four separate times.</sub></p>
-<p>
-  <img alt="Python" src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white">
-  <img alt="Flask" src="https://img.shields.io/badge/Flask-3BABC3?style=flat-square&logo=flask&logoColor=white">
-  <img alt="SQLite" src="https://img.shields.io/badge/SQLite-003B57?style=flat-square&logo=sqlite&logoColor=white">
-  <img alt="JavaScript" src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=000">
-</p>
-<a href="https://github.com/warnerem/CCD-data-archive/pulls?q=is%3Apr+author%3Aiwang-1+is%3Amerged"><b>See the merged PRs →</b></a>
-</td>
-</tr>
-<tr></tr>
-<tr>
-<td width="50%" valign="top">
-<h3>⚛️ FIRE-QML-WINNERS-QNLP</h3>
-<p>
-  <img alt="3-person research team" src="https://img.shields.io/badge/3--person_research_team-A855F7?style=flat-square">
-</p>
-<p>Quantum NLP for sentence classification. My slice of the project: <b>dataset prep, integration, and docs</b> — the glue that turns three people's research code into one thing that runs.</p>
-<p><sub>📈 Enhanced optimizers beat a default-gain SPSA baseline by <b>~30 points</b> of train/test accuracy (exact noiseless simulation).</sub></p>
-<p>
-  <img alt="Python" src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white">
-  <img alt="DisCoPy" src="https://img.shields.io/badge/DisCoPy-FF5F6D?style=flat-square">
-  <img alt="Qiskit" src="https://img.shields.io/badge/Qiskit-6929C4?style=flat-square&logo=qiskit&logoColor=white">
-  <img alt="pytket" src="https://img.shields.io/badge/pytket-0F766E?style=flat-square">
-</p>
-<a href="https://github.com/iwang-1/FIRE-QML-WINNERS-QNLP"><b>Explore the repo →</b></a> · <a href="https://nbviewer.org/github/iwang-1/FIRE-QML-WINNERS-QNLP/blob/main/code/mc_task_simulation.ipynb"><b>Run the notebook ↗</b></a>
-</td>
-<td width="50%" valign="top">
-<h3>🌍 PRs in the wild</h3>
-<p>
-  <img alt="upstream contributions" src="https://img.shields.io/badge/upstream_contributions-2ea043?style=flat-square">
-</p>
-<p>
-  <img alt="open, not merged" src="https://img.shields.io/badge/OPEN-not_merged_(yet)-d29922?style=flat-square"> <a href="https://github.com/Quantinuum/lambeq/pull/259"><b>lambeq #259</b></a><br>
-  Adds a <code>LAMBEQ_MODELS_URL</code> override — my one open upstream PR.
-</p>
-<p>
-  <img alt="merged" src="https://img.shields.io/badge/MERGED-%C3%974-2ea043?style=flat-square"> <a href="https://github.com/warnerem/CCD-data-archive/pulls?q=is%3Apr+author%3Aiwang-1+is%3Amerged"><b>CCD-data-archive</b></a> — details in the card above ↖
+  <img alt="Rust" src="https://img.shields.io/badge/Rust-111827?style=flat-square&logo=rust&logoColor=white">
+  <img alt="LSM tree" src="https://img.shields.io/badge/LSM_tree-0891B2?style=flat-square">
+  <img alt="Property testing" src="https://img.shields.io/badge/property_testing-0E7490?style=flat-square">
 </p>
 </td>
 </tr>
 </table>
 
-<img width="100%" height="4" alt="" src="https://capsule-render.vercel.app/api?type=rect&color=0:38BDF8,50:1D4ED8,100:102A43&height=4">
+## Shipped And Researched
 
-## 🧰 Toolbox
+| Project | What it demonstrates |
+| --- | --- |
+| [UMD Observatory CCD Data Archive](https://github.com/warnerem/CCD-data-archive) | Python/Flask/SQLite archive serving 50,000+ records; four pull requests merged upstream and pipeline runtime reduced 75% |
+| [Cross-Domain Sentiment DANN](https://github.com/iwang-1/cross-domain-sentiment-dann) | DistilBERT domain-adversarial training across Yelp, Amazon, Twitter, and Reddit, with explicit baselines and limitations |
+| [FIRE QML WINNERS QNLP](https://github.com/iwang-1/FIRE-QML-WINNERS-QNLP) | Four-person quantum NLP research artifact; I owned dataset preparation, workflow integration, and documentation |
+| [This Portfolio](https://github.com/iwang-1/iwang-1.github.io) | React/TypeScript multi-page site with static prerendering, no-JS fallbacks, factual guardrails, and Playwright verification |
+
+## Upstream Work
+
+- **Merged x4:** [CCD-data-archive pull requests](https://github.com/warnerem/CCD-data-archive/pulls?q=is%3Apr+author%3Aiwang-1+is%3Amerged)
+- **Under review:** [lambeq #259](https://github.com/Quantinuum/lambeq/pull/259), adding a configurable model-download base URL
+
+## Toolbox
 
 <div align="center">
 
 <picture>
-  <source media="(prefers-color-scheme: light)" srcset="https://skillicons.dev/icons?i=py,java,c,cpp,ts,js,bash,fastapi,flask,react,pytorch,sklearn,aws,docker,linux,git,postgres,sqlite,githubactions&perline=10&theme=light">
-  <img alt="Python, Java, C, C++, TypeScript, JavaScript, Bash, FastAPI, Flask, React, PyTorch, scikit-learn, AWS, Docker, Linux, Git, PostgreSQL, SQLite, GitHub Actions" src="https://skillicons.dev/icons?i=py,java,c,cpp,ts,js,bash,fastapi,flask,react,pytorch,sklearn,aws,docker,linux,git,postgres,sqlite,githubactions&perline=10&theme=dark">
+  <source media="(prefers-color-scheme: light)" srcset="https://skillicons.dev/icons?i=go,rust,py,java,ts,js,bash,react,pytorch,sklearn,aws,docker,linux,git,postgres,sqlite,githubactions&perline=9&theme=light">
+  <img alt="Go, Rust, Python, Java, TypeScript, JavaScript, Bash, React, PyTorch, scikit-learn, AWS, Docker, Linux, Git, PostgreSQL, SQLite, and GitHub Actions" src="https://skillicons.dev/icons?i=go,rust,py,java,ts,js,bash,react,pytorch,sklearn,aws,docker,linux,git,postgres,sqlite,githubactions&perline=9&theme=dark">
 </picture>
 
-<sub>…plus SQL and pytest. Python bats first; the rest rotate through the lineup.</sub>
+<sub>Also: Raft, gRPC/Protobuf, LSM trees, Flask/FastAPI, JUnit 5, Hugging Face, SQL, and Playwright.</sub>
 
 </div>
 
-<img width="100%" height="4" alt="" src="https://capsule-render.vercel.app/api?type=rect&color=0:102A43,50:1D4ED8,100:38BDF8&height=4">
+## Beyond The Terminal
 
-## ⛰️ Off the clock
-
-<p><b>⌨️ The mechanical keyboard rabbit hole</b> <img alt="status: hand-built" src="https://img.shields.io/badge/status-hand--built-D6336C?style=flat-square"></p>
-<p>I build mechanical keyboards. It started as "I just want nicer typing" and escalated into a full engineering discipline. Every keystroke of this README was hand-assembled.</p>
-
-<p><b>🖥️ The PC builds</b> <img alt="cable management: work in progress" src="https://img.shields.io/badge/cable_mgmt-work_in_progress-A855F7?style=flat-square"></p>
-<p>I build PCs too. Every build begins with "this one will have immaculate cable management," and every build teaches humility.</p>
-
-<p><b>🧗 Climbing</b> <img alt="current beta: under review" src="https://img.shields.io/badge/current_beta-under_review-38BDF8?style=flat-square"></p>
-<p>Climbing is debugging with consequences: read the problem, commit to an approach, fall off, iterate. Best feedback loop there is.</p>
+I'm Secretary of the **UMD Climbing Club**, where I organize eight trips a semester and helped grow attendance 30%. I also build mechanical keyboards and custom PCs, usually with more attention to the internals than the cable management deserves.
 
 <div align="center">
 
-<p>
-  <a href="https://www.linkedin.com/in/ivanwang1"><b>LinkedIn</b></a> ·
-  <a href="https://iwang-1.github.io/"><b>iwang-1.github.io</b></a> ·
-  <a href="mailto:ivanwang8989@gmail.com"><b>Email</b></a>
-</p>
+<a href="https://iwang-1.github.io/"><b>Portfolio</b></a> &middot;
+<a href="https://www.linkedin.com/in/ivanwang1"><b>LinkedIn</b></a> &middot;
+<a href="mailto:ivanwang8989@gmail.com"><b>Email</b></a>
 
-<sub>Thanks for stopping by.</sub>
-
-<img width="100%" alt="" src="https://capsule-render.vercel.app/api?type=waving&color=0:38BDF8,50:1D4ED8,100:102A43&height=110&section=footer">
+<img width="100%" alt="" src="https://capsule-render.vercel.app/api?type=waving&color=0:22D3EE,45:0891B2,100:0C2438&height=105&section=footer">
 
 </div>
