@@ -1,97 +1,52 @@
-<div align="center">
+# Ivan Wang
 
-<img width="100%" alt="Ivan Wang - distributed systems, backend engineering, and ML/NLP" src="https://capsule-render.vercel.app/api?type=waving&color=0:0C2438,55:0891B2,100:22D3EE&height=215&section=header&text=Ivan%20Wang&fontSize=62&fontColor=F4F8F9&animation=fadeIn&fontAlignY=36&desc=systems%20that%20stay%20correct%20when%20parts%20fail&descSize=18&descAlignY=57">
+**Software engineer focused on backend, distributed systems, and storage.**
 
-**Distributed systems &middot; storage engines &middot; backend infrastructure &middot; ML/NLP**
+[Portfolio](https://iwang-1.github.io/) · [LinkedIn](https://www.linkedin.com/in/ivanwang1) · [Email](mailto:ivanwang8989@gmail.com)
 
-<p>
-  <img alt="AWS SDE Intern, Summer 2026" src="https://img.shields.io/badge/AWS-SDE_Intern_%C2%B7_Summer_2026-FF9900?style=for-the-badge&logo=amazonwebservices&logoColor=111827">
-  <img alt="UMD Computer Science BS/MS, May 2027" src="https://img.shields.io/badge/UMD-CS_B.S.%2FM.S._%C2%B7_May_2027-0C2438?style=for-the-badge">
-  <img alt="Seeking new graduate software engineering roles" src="https://img.shields.io/badge/New_Grad-SWE_%C2%B7_2027-0891B2?style=for-the-badge">
-</p>
-<p>
-  <a href="https://iwang-1.github.io/"><img alt="Portfolio" src="https://img.shields.io/badge/Portfolio-iwang--1.github.io-0891B2?style=for-the-badge&logo=githubpages&logoColor=white"></a>
-  <a href="https://www.linkedin.com/in/ivanwang1"><img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-ivanwang1-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"></a>
-  <a href="mailto:ivanwang8989@gmail.com"><img alt="Email Ivan Wang" src="https://img.shields.io/badge/Email-ivanwang8989%40gmail.com-0E7490?style=for-the-badge&logo=gmail&logoColor=white"></a>
-</p>
+## Snapshot
 
-</div>
+- **AWS:** Software Development Engineer Intern, Summer 2026, working on agent-assisted test migration and EC2/VPC canary infrastructure.
+- **University of Maryland:** Computer Science B.S./M.S., Departmental Honors research track, graduating May 2027.
+- **Recruiting:** Seeking Summer 2027 new-grad software engineering roles, especially in backend, infrastructure, storage, and distributed systems.
 
-## About
+## Featured Engineering
 
-I'm a software engineer focused on **distributed systems, storage, and backend infrastructure**. I like software whose correctness can be tested under crashes, partitions, delayed messages, and hostile schedules, not just on the happy path.
+### [parallax-kv](https://github.com/iwang-1/parallax-kv) · Go, Raft, gRPC
 
-- **SDE Intern at AWS (Summer 2026):** backend systems and cloud infrastructure
-- **B.S./M.S. in Computer Science at UMD:** Departmental Honors research track, graduating May 2027
-- **Open source:** four merged pull requests in the UMD Observatory archive and one upstream lambeq PR under review
-- **Seeking:** new-grad software engineering roles starting Summer 2027
+A three-node Raft key-value store built from scratch with PreVote, ReadIndex, persist-before-send ordering, snapshots, and a durable write-ahead log.
 
-## Featured Systems
+- Deterministic stress testing exercises partitions, crashes, message loss, delays, and snapshots across 2.9 million client operations.
+- The checker found zero safety or linearizability violations and helped expose a precision bug in the test harness itself.
 
-<table>
-<tr>
-<td width="50%" valign="top">
-<h3><a href="https://github.com/iwang-1/parallax-kv">parallax-kv</a></h3>
-<p><b>Three-node Raft key-value store in Go</b></p>
-<p>PreVote, ReadIndex, persist-before-send ordering, snapshots, a durable WAL, gRPC, and deterministic fault simulation.</p>
-<p><b>1,400 fault scenarios</b> and <b>2,914,245 client operations</b> with zero safety or linearizability violations.</p>
-<p>
-  <img alt="Go" src="https://img.shields.io/badge/Go-00ADD8?style=flat-square&logo=go&logoColor=white">
-  <img alt="Raft" src="https://img.shields.io/badge/Raft-0E7490?style=flat-square">
-  <img alt="gRPC" src="https://img.shields.io/badge/gRPC-244C5A?style=flat-square&logo=google&logoColor=white">
-</p>
-</td>
-<td width="50%" valign="top">
-<h3><a href="https://github.com/iwang-1/accretion-db">accretion-db</a></h3>
-<p><b>Crash-tested LSM-tree engine in safe Rust</b></p>
-<p>CRC-framed WAL, group commit, memtables, block SSTables, bloom filters, compaction, and a fault-injecting storage layer.</p>
-<p><b>2,640 crash executions</b> with zero acknowledged-write loss; about <b>29x WAL-bound</b> group-commit throughput.</p>
-<p>
-  <img alt="Rust" src="https://img.shields.io/badge/Rust-111827?style=flat-square&logo=rust&logoColor=white">
-  <img alt="LSM tree" src="https://img.shields.io/badge/LSM_tree-0891B2?style=flat-square">
-  <img alt="Property testing" src="https://img.shields.io/badge/property_testing-0E7490?style=flat-square">
-</p>
-</td>
-</tr>
-</table>
+### [accretion-db](https://github.com/iwang-1/accretion-db) · Rust, LSM tree, crash consistency
 
-## Shipped And Researched
+An embeddable storage engine with a CRC-framed WAL, group commit, memtables, block-based SSTables, bloom filters, and size-tiered compaction.
 
-| Project | What it demonstrates |
-| --- | --- |
-| [UMD Observatory CCD Data Archive](https://github.com/warnerem/CCD-data-archive) | Python/Flask/SQLite archive serving 50,000+ records; four pull requests merged upstream and pipeline runtime reduced 75% |
-| [Cross-Domain Sentiment DANN](https://github.com/iwang-1/cross-domain-sentiment-dann) | DistilBERT domain-adversarial training across Yelp, Amazon, Twitter, and Reddit, with explicit baselines and limitations |
-| [FIRE QML WINNERS QNLP](https://github.com/iwang-1/FIRE-QML-WINNERS-QNLP) | Four-person quantum NLP research artifact; I owned dataset preparation, workflow integration, and documentation |
-| [This Portfolio](https://github.com/iwang-1/iwang-1.github.io) | React/TypeScript multi-page site with static prerendering, no-JS fallbacks, factual guardrails, and Playwright verification |
+- Fault-injection and property-based tests verify that acknowledged writes survive simulated crashes.
+- Safe Rust only, with roughly 29x WAL-bound throughput from group commit.
 
-## Upstream Work
+## Selected Work
 
-- **Merged x4:** [CCD-data-archive pull requests](https://github.com/warnerem/CCD-data-archive/pulls?q=is%3Apr+author%3Aiwang-1+is%3Amerged)
-- **Under review:** [lambeq #259](https://github.com/Quantinuum/lambeq/pull/259), adding a configurable model-download base URL
+- **[UMD Observatory CCD Data Archive](https://github.com/warnerem/CCD-data-archive):** Python, Flask, and SQLite application serving 50,000+ astronomy records; optimized ingestion and query paths to reduce pipeline runtime by 75%.
+- **[Cross-Domain Sentiment DANN](https://github.com/iwang-1/cross-domain-sentiment-dann):** DistilBERT and domain-adversarial training across Yelp, Amazon, Twitter, and Reddit, with explicit evidence boundaries and reproducible workflows.
+- **[Quantum NLP Research](https://github.com/iwang-1/FIRE-QML-WINNERS-QNLP):** Four-person research artifact using DisCoPy, Qiskit, pytket, and JAX; I worked on dataset preparation, experiment integration, and documentation.
+- **[Portfolio](https://github.com/iwang-1/iwang-1.github.io):** React and TypeScript site with static prerendering, no-JavaScript fallbacks, factual guardrails, accessibility checks, and Playwright verification.
 
-## Toolbox
+## Technical Focus
 
-<div align="center">
+**Languages:** Go · Rust · Java · Python · TypeScript/JavaScript · SQL · Bash
 
-<picture>
-  <source media="(prefers-color-scheme: light)" srcset="https://skillicons.dev/icons?i=go,rust,py,java,ts,js,bash,react,pytorch,sklearn,aws,docker,linux,git,postgres,sqlite,githubactions&perline=9&theme=light">
-  <img alt="Go, Rust, Python, Java, TypeScript, JavaScript, Bash, React, PyTorch, scikit-learn, AWS, Docker, Linux, Git, PostgreSQL, SQLite, and GitHub Actions" src="https://skillicons.dev/icons?i=go,rust,py,java,ts,js,bash,react,pytorch,sklearn,aws,docker,linux,git,postgres,sqlite,githubactions&perline=9&theme=dark">
-</picture>
+**Backend and systems:** Raft · gRPC/Protobuf · LSM trees · PostgreSQL/SQLite · Flask/FastAPI · JUnit 5
 
-<sub>Also: Raft, gRPC/Protobuf, LSM trees, Flask/FastAPI, JUnit 5, Hugging Face, SQL, and Playwright.</sub>
+**Infrastructure:** AWS · Docker · Linux · GitHub Actions · Jenkins · Playwright
 
-</div>
+**ML and research:** PyTorch · Hugging Face · scikit-learn · Qiskit · DisCoPy · JAX
 
-## Beyond The Terminal
+## Beyond Code
 
-I'm Secretary of the **UMD Climbing Club**, where I organize eight trips a semester and helped grow attendance 30%. I also build mechanical keyboards and custom PCs, usually with more attention to the internals than the cable management deserves.
+I serve as Secretary of the UMD Climbing Club, organizing eight trips each semester and helping grow attendance by 30%. I also build mechanical keyboards and custom PCs.
 
-<div align="center">
+## Contact
 
-<a href="https://iwang-1.github.io/"><b>Portfolio</b></a> &middot;
-<a href="https://www.linkedin.com/in/ivanwang1"><b>LinkedIn</b></a> &middot;
-<a href="mailto:ivanwang8989@gmail.com"><b>Email</b></a>
-
-<img width="100%" alt="" src="https://capsule-render.vercel.app/api?type=waving&color=0:22D3EE,45:0891B2,100:0C2438&height=105&section=footer">
-
-</div>
+The fastest way to reach me is [email](mailto:ivanwang8989@gmail.com). You can also find my complete project and experience overview at [iwang-1.github.io](https://iwang-1.github.io/).
