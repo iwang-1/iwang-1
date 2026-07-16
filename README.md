@@ -3,8 +3,8 @@
 <img width="100%" alt="Ivan Wang — distributed systems · storage engines · backend infrastructure" src="https://capsule-render.vercel.app/api?type=waving&color=0:102A43,50:1D4ED8,100:38BDF8&height=210&section=header&text=Ivan%20Wang&fontSize=62&fontColor=ffffff&animation=fadeIn&fontAlignY=36&desc=distributed%20systems%20%C2%B7%20storage%20engines%20%C2%B7%20backend%20infrastructure&descSize=18&descAlignY=57">
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://readme-typing-svg.demolab.com/?font=Fira+Code&weight=600&size=20&pause=1000&color=F472B6&center=true&vCenter=true&width=680&height=44&lines=Hi%2C+I'm+Ivan+%F0%9F%91%8B;AWS+SDE+Intern+(Summer+2026)+%E2%80%94+backend+%2B+cloud+infra;CS+B.S.%2FM.S.+%40+UMD+College+Park;I+build+systems+that+stay+correct+when+parts+fail;Seeking+new-grad+SWE+roles;Climbing+when+I'm+not+compiling">
-  <img alt="Hi, I'm Ivan — AWS SDE Intern (Summer 2026) — CS B.S./M.S. @ UMD — seeking new-grad SWE roles" src="https://readme-typing-svg.demolab.com/?font=Fira+Code&weight=600&size=20&pause=1000&color=DB2777&center=true&vCenter=true&width=680&height=44&lines=Hi%2C+I'm+Ivan+%F0%9F%91%8B;AWS+SDE+Intern+(Summer+2026)+%E2%80%94+backend+%2B+cloud+infra;CS+B.S.%2FM.S.+%40+UMD+College+Park;I+build+systems+that+stay+correct+when+parts+fail;Seeking+new-grad+SWE+roles;Climbing+when+I'm+not+compiling">
+  <source media="(prefers-color-scheme: dark)" srcset="https://readme-typing-svg.demolab.com/?font=Fira+Code&weight=600&size=20&pause=1000&color=38BDF8&center=true&vCenter=true&width=680&height=44&lines=Hi%2C+I'm+Ivan+%F0%9F%91%8B;AWS+SDE+Intern+(Summer+2026)+%E2%80%94+backend+%2B+cloud+infra;CS+B.S.%2FM.S.+%40+UMD+College+Park;I+build+systems+that+stay+correct+when+parts+fail;Seeking+new-grad+SWE+roles;Climbing+when+I'm+not+compiling">
+  <img alt="Hi, I'm Ivan — AWS SDE Intern (Summer 2026) — CS B.S./M.S. @ UMD — seeking new-grad SWE roles" src="https://readme-typing-svg.demolab.com/?font=Fira+Code&weight=600&size=20&pause=1000&color=1D4ED8&center=true&vCenter=true&width=680&height=44&lines=Hi%2C+I'm+Ivan+%F0%9F%91%8B;AWS+SDE+Intern+(Summer+2026)+%E2%80%94+backend+%2B+cloud+infra;CS+B.S.%2FM.S.+%40+UMD+College+Park;I+build+systems+that+stay+correct+when+parts+fail;Seeking+new-grad+SWE+roles;Climbing+when+I'm+not+compiling">
 </picture>
 
 <p>
@@ -35,16 +35,22 @@
   <li>⛰️ Otherwise: climbing, building mechanical keyboards, and building PCs</li>
 </ul>
 </td>
-<td width="45%" valign="middle" align="center">
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats-sigma-five.vercel.app/api?username=iwang-1&show_icons=true&hide_border=true&count_private=true&include_all_commits=true&hide=stars%2Cissues%2Cprs&card_width=440&bg_color=0d1117&title_color=f472b6&text_color=c9d1d9&icon_color=58a6ff&ring_color=a855f7">
-  <img width="440" alt="Ivan's GitHub stats" src="https://github-readme-stats-sigma-five.vercel.app/api?username=iwang-1&show_icons=true&hide_border=true&count_private=true&include_all_commits=true&hide=stars%2Cissues%2Cprs&card_width=440&bg_color=ffffff&title_color=db2777&text_color=24292f&icon_color=0969da&ring_color=8b5cf6">
-</picture>
+<td width="45%" valign="top">
+<h3>Currently</h3>
+<p>
+  <img alt="Focus: distributed systems, storage, backend" src="https://img.shields.io/badge/focus-distributed_systems_%C2%B7_storage_%C2%B7_backend-1D4ED8?style=for-the-badge">
+</p>
+<table>
+<tr><td>🧭</td><td><b>Building</b></td><td>from-scratch systems in Go &amp; Rust</td></tr>
+<tr><td>☁️</td><td><b>Interning</b></td><td>backend + cloud infra @ AWS</td></tr>
+<tr><td>🔬</td><td><b>Studying</b></td><td>M.S. CS @ UMD (research track)</td></tr>
+<tr><td>🎯</td><td><b>Seeking</b></td><td>new-grad SWE roles for 2027</td></tr>
+</table>
 <p>
   <img alt="Upstream PRs: 4 merged, 1 open" src="https://img.shields.io/badge/upstream_PRs-4_merged_%C2%B7_1_open-2ea043?style=flat-square&logo=git&logoColor=white">
-  <br>
-  <sub>the research + open-source story lives on the <a href="https://iwang-1.github.io/projects/">portfolio</a> ↗</sub>
+  <img alt="Public repos: systems, ML/NLP, tooling" src="https://img.shields.io/badge/public_repos-systems_%2B_ML%2FNLP-38BDF8?style=flat-square&logo=github&logoColor=white">
 </p>
+<sub>the research + open-source story lives on the <a href="https://iwang-1.github.io/projects/">portfolio</a> ↗</sub>
 </td>
 </tr>
 </table>
@@ -121,16 +127,45 @@ Three systems built from scratch, each with a test harness designed before the t
 
 ## 🧰 Toolbox
 
-<div align="center">
+**Languages**
 
-<picture>
-  <source media="(prefers-color-scheme: light)" srcset="https://skillicons.dev/icons?i=go,rust,java,py,c,cpp,ts,js,bash,react,flask,fastapi,pytorch,sklearn,aws,docker,linux,git,postgres,githubactions&perline=10&theme=light">
-  <img alt="Go, Rust, Java, Python, C, C++, TypeScript, JavaScript, Bash, React, Flask, FastAPI, PyTorch, scikit-learn, AWS, Docker, Linux, Git, PostgreSQL, GitHub Actions" src="https://skillicons.dev/icons?i=go,rust,java,py,c,cpp,ts,js,bash,react,flask,fastapi,pytorch,sklearn,aws,docker,linux,git,postgres,githubactions&perline=10&theme=dark">
-</picture>
+![Go](https://img.shields.io/badge/Go-00ADD8?style=flat-square&logo=go&logoColor=white)
+![Rust](https://img.shields.io/badge/Rust-CE422B?style=flat-square&logo=rust&logoColor=white)
+![Java](https://img.shields.io/badge/Java-E76F00?style=flat-square&logo=openjdk&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![C](https://img.shields.io/badge/C-283593?style=flat-square&logo=c&logoColor=white)
+![C++](https://img.shields.io/badge/C++-00599C?style=flat-square&logo=cplusplus&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
+![Bash](https://img.shields.io/badge/Bash-4EAA25?style=flat-square&logo=gnubash&logoColor=white)
 
-<sub>…plus gRPC/Protobuf, SQL, JUnit 5, and CDK/CloudWatch on the job.</sub>
+**Backend & systems**
 
-</div>
+![gRPC](https://img.shields.io/badge/gRPC-244C5A?style=flat-square&logo=google&logoColor=white)
+![Protobuf](https://img.shields.io/badge/Protobuf-0E7490?style=flat-square)
+![Flask](https://img.shields.io/badge/Flask-000000?style=flat-square&logo=flask&logoColor=white)
+![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white)
+![React](https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white)
+![SQLite](https://img.shields.io/badge/SQLite-003B57?style=flat-square&logo=sqlite&logoColor=white)
+
+**ML & research**
+
+![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white)
+![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=flat-square&logo=scikitlearn&logoColor=white)
+![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=flat-square&logo=langchain&logoColor=white)
+![Qiskit](https://img.shields.io/badge/Qiskit-6929C4?style=flat-square&logo=qiskit&logoColor=white)
+
+**Infrastructure**
+
+![AWS](https://img.shields.io/badge/AWS-232F3E?style=flat-square&logo=amazonwebservices&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
+![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black)
+![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
+![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white)
+
+<sub>…plus JUnit 5, and CDK/CloudWatch on the job.</sub>
 
 <img width="100%" height="4" alt="" src="https://capsule-render.vercel.app/api?type=rect&color=0:102A43,50:1D4ED8,100:38BDF8&height=4">
 
