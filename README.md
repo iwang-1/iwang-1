@@ -29,19 +29,18 @@
 <ul>
   <li>☁️ <b>SDE Intern @ AWS (Summer 2026)</b> — EC2 Networking, backend systems &amp; cloud infrastructure</li>
   <li>🎓 <b>CS B.S./M.S.</b> — University of Maryland, College Park; Departmental Honors research track, finishing the M.S.</li>
-  <li>🧠 Happiest around <b>distributed systems, storage engines, and backend infrastructure</b></li>
-  <li>🔬 I like software you can <b>check</b>: deterministic tests, seeded fault injection, reproducible benchmarks</li>
+  <li>🛠️ I build <b>across the stack</b> — backend services, systems software, and ML/NLP — and pick up new stacks fast</li>
+  <li>🔬 I care about software you can <b>check</b>: tests, reproducible measurements, and honest limitations</li>
   <li>🎯 <b>Seeking new-grad software engineering roles</b> for 2027</li>
-  <li>⛰️ Otherwise: climbing, building mechanical keyboards, and building PCs</li>
 </ul>
 </td>
 <td width="45%" valign="top">
 <h3>Currently</h3>
 <p>
-  <img alt="Focus: distributed systems, storage, backend" src="https://img.shields.io/badge/focus-distributed_systems_%C2%B7_storage_%C2%B7_backend-1D4ED8?style=for-the-badge">
+  <img alt="Full-stack software engineer" src="https://img.shields.io/badge/software_engineer-backend_%C2%B7_systems_%C2%B7_ML%2FNLP-1D4ED8?style=for-the-badge">
 </p>
 <table>
-<tr><td>🧭</td><td><b>Building</b></td><td>from-scratch systems in Go &amp; Rust</td></tr>
+<tr><td>🧭</td><td><b>Building</b></td><td>systems, services, and ML/NLP in Go, Rust &amp; Python</td></tr>
 <tr><td>☁️</td><td><b>Interning</b></td><td>backend + cloud infra @ AWS</td></tr>
 <tr><td>🔬</td><td><b>Studying</b></td><td>M.S. CS @ UMD (research track)</td></tr>
 <tr><td>🎯</td><td><b>Seeking</b></td><td>new-grad SWE roles for 2027</td></tr>
@@ -96,7 +95,7 @@ Three systems built from scratch, each with a test harness designed before the t
 <h3>🧲 <a href="https://github.com/iwang-1/lodestone">lodestone</a></h3>
 <p><b>SIMD-accelerated vector search engine in Rust</b></p>
 <p>An HNSW proximity graph and an IVF-PQ compressed index over hand-written AVX-512 distance kernels — for embeddings and RAG retrieval.</p>
-<p><sub>📈 On 50,000 128-d vectors, single core: HNSW hits <b>0.976 recall@10 at ~31,700 QPS</b> — a <b>30–48x</b> speedup over the exact scan at 90%+ recall; IVF-PQ holds <b>0.975 recall@10 at 16x</b> compression.</sub></p>
+<p><sub>📈 On 50,000 128-d vectors, single core: HNSW hits <b>0.976 recall@10 at ~31,800 QPS</b> — a <b>30–48x</b> speedup over the exact scan at 90%+ recall; IVF-PQ holds <b>0.975 recall@10 at 16x</b> compression.</sub></p>
 <p>
   <img alt="Rust" src="https://img.shields.io/badge/Rust-CE422B?style=flat-square&logo=rust&logoColor=white">
   <img alt="HNSW" src="https://img.shields.io/badge/HNSW-0E7490?style=flat-square">
@@ -168,14 +167,6 @@ Three systems built from scratch, each with a test harness designed before the t
 <sub>…plus JUnit 5, and CDK/CloudWatch on the job.</sub>
 
 <img width="100%" height="4" alt="" src="https://capsule-render.vercel.app/api?type=rect&color=0:102A43,50:1D4ED8,100:38BDF8&height=4">
-
-## ⛰️ Off the clock
-
-<p><b>🧗 Climbing</b> <img alt="current beta: under review" src="https://img.shields.io/badge/current_beta-under_review-38BDF8?style=flat-square"></p>
-<p>As Secretary of the UMD Climbing Club I organize eight trips a semester and helped grow attendance ~30%. Climbing is debugging with consequences: read the problem, commit to an approach, fall off, iterate.</p>
-
-<p><b>⌨️ Mechanical keyboards &amp; 🖥️ PC builds</b> <img alt="cable management: work in progress" src="https://img.shields.io/badge/cable_mgmt-work_in_progress-A855F7?style=flat-square"></p>
-<p>Different materials, same habit: understand the whole system, then make it solid. Every build begins with "this one will have immaculate cable management," and every build teaches humility.</p>
 
 <div align="center">
 
