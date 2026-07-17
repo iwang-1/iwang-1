@@ -1,6 +1,6 @@
 <div align="center">
 
-<img width="100%" alt="Ivan Wang — software engineer" src="https://capsule-render.vercel.app/api?type=waving&color=0:102A43,50:1D4ED8,100:38BDF8&height=210&section=header&text=Ivan%20Wang&fontSize=62&fontColor=ffffff&animation=fadeIn&fontAlignY=36&desc=software%20engineer&descSize=18&descAlignY=57">
+<img width="100%" alt="Ivan Wang — Software Engineer" src="https://capsule-render.vercel.app/api?type=waving&color=0:102A43,50:1D4ED8,100:38BDF8&height=210&section=header&text=Ivan%20Wang&fontSize=62&fontColor=ffffff&animation=fadeIn&fontAlignY=36&desc=Software%20Engineer&descSize=18&descAlignY=57">
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://readme-typing-svg.demolab.com/?font=Fira+Code&weight=600&size=20&pause=1000&color=38BDF8&center=true&vCenter=true&width=680&height=44&lines=Hi%2C+I'm+Ivan+%F0%9F%91%8B;AWS+SDE+Intern+(Summer+2026)+%E2%80%94+backend+%2B+cloud+infra;CS+B.S.%2FM.S.+%40+UMD+College+Park;I+build+systems+that+stay+correct+when+parts+fail;Seeking+new-grad+SWE+roles;Climbing+when+I'm+not+compiling">
