@@ -95,7 +95,7 @@ Three systems built from scratch, each with a test harness designed before the t
 <h3>🧲 <a href="https://github.com/iwang-1/lodestone">lodestone</a></h3>
 <p><b>SIMD-accelerated vector search engine in Rust</b></p>
 <p>An HNSW proximity graph and an IVF-PQ compressed index over hand-written AVX-512 distance kernels — for embeddings and RAG retrieval.</p>
-<p><sub>📈 On 50,000 128-d vectors, single core: HNSW hits <b>0.976 recall@10 at ~31,800 QPS</b> — a <b>30–48x</b> speedup over the exact scan at 90%+ recall; IVF-PQ holds <b>0.975 recall@10 at 16x</b> compression.</sub></p>
+<p><sub>📈 On 50,000 128-d vectors, single core: HNSW hits <b>0.976 recall@10 at ~31,800 QPS</b> — about <b>33x</b> the exact brute-force search at that recall, and <b>9–33x</b> across the 90%+ recall band; IVF-PQ holds <b>0.975 recall@10 at 16x</b> compression.</sub></p>
 <p>
   <img alt="Rust" src="https://img.shields.io/badge/Rust-CE422B?style=flat-square&logo=rust&logoColor=white">
   <img alt="HNSW" src="https://img.shields.io/badge/HNSW-0E7490?style=flat-square">
