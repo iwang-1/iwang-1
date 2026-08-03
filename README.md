@@ -1,6 +1,6 @@
 # Ivan Wang
 
-**UMD computer science B.S./M.S.**, Departmental Honors research track, graduating May 2027.
+**UMD computer science B.S./M.S.**, Departmental Honors research track, graduating May 2027.<br>
 **SDE intern at AWS** on EC2 Networking, Summer 2026.
 
 Open to Summer 2027 internships and new-grad roles, relocating anywhere in the US.
@@ -19,9 +19,9 @@ Three systems written from scratch, each measured against a committed benchmark 
 
 Raft consensus from scratch: PreVote, ReadIndex linearizable reads, persist-before-send ordering, snapshots, a durable write-ahead log, and a gRPC runtime.
 
-> A deterministic harness replayed partitions, crashes, message loss, delays, and snapshot churn across **2.9M client operations** — zero safety or linearizability violations. The first bug it caught was in the linearizability checker, not in the consensus code.
+> A deterministic harness replayed partitions, crashes, message loss, delays, and snapshot churn across **2.9M client operations** — zero safety or linearizability violations. The first bug it caught was in my own election-safety check, not in the consensus code.
 >
-> <sub>[docs/BUG_LEDGER.md](https://github.com/iwang-1/parallax-kv/blob/main/docs/BUG_LEDGER.md) · 3 nodes, localhost, c=8 · not built: production snapshot scheduling or chunked streaming</sub>
+> <sub>[docs/BUG_LEDGER.md](https://github.com/iwang-1/parallax-kv/blob/main/docs/BUG_LEDGER.md) · 3 nodes, 6 simulated clients, virtual time · not built: production snapshot scheduling or chunked streaming</sub>
 
 ### [accretion-db](https://github.com/iwang-1/accretion-db) — crash-safe LSM storage engine, Rust
 
