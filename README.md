@@ -19,7 +19,7 @@ Three systems written from scratch, each measured against a committed benchmark 
 
 Raft consensus from scratch: PreVote, ReadIndex linearizable reads, persist-before-send ordering, snapshots, a durable write-ahead log, and a gRPC runtime.
 
-> A deterministic harness replayed partitions, crashes, message loss, delays, and snapshot churn across **2.9M client operations** — zero safety or linearizability violations. The first bug it caught was in my own election-safety check, not in the consensus code.
+> A deterministic harness replayed partitions, crashes, message loss, delays, and snapshot churn across **2.9M client operations** — zero safety violations, and zero `Illegal` verdicts from the linearizability checker. The first bug it caught was in my own election-safety check, not in the consensus code.
 >
 > <sub>[docs/BUG_LEDGER.md](https://github.com/iwang-1/parallax-kv/blob/main/docs/BUG_LEDGER.md) · 3 nodes, 6 simulated clients, virtual time · not built: production snapshot scheduling or chunked streaming</sub>
 
@@ -29,13 +29,13 @@ A CRC-framed write-ahead log with group commit, memtables, block-based SSTables 
 
 > A fault-injecting storage layer replays power loss at **330 deterministic crash points** (2,640 executions) plus 160 property-based crash schedules: **zero acknowledged-write loss**, and a **~29x** gain from group commit.
 >
-> <sub>[benchmarks/RESULTS.md](https://github.com/iwang-1/accretion-db/blob/main/benchmarks/RESULTS.md) · 16-byte keys, 100-byte values, ext4 on NVMe · compared against sled, including the cases sled wins · the ~29x is WAL-bound, and compaction runs under the write lock</sub>
+> <sub>[benchmarks/RESULTS.md](https://github.com/iwang-1/accretion-db/blob/main/benchmarks/RESULTS.md) · 16-byte keys, 100-byte values, ext4 on NVMe · compared against sled, which wins every matched comparison on this host · the ~29x is WAL-bound, and compaction runs under the write lock</sub>
 
 ### [lodestone](https://github.com/iwang-1/lodestone) — vector search engine, Rust
 
 An HNSW proximity graph and an IVF-PQ compressed index over hand-written AVX-512 distance kernels with runtime feature dispatch, for embeddings and RAG retrieval.
 
-> On 50,000 128-dimensional vectors on a single core, HNSW reached **0.976 recall@10 at about 31,800 queries per second** — about **33x** the exact brute-force search at that recall, and **9–33x** across the 90%+ recall band. IVF-PQ holds 0.975 recall@10 at 16x memory compression.
+> On 50,000 128-dimensional vectors on a single core, HNSW reached **0.976 recall@10 at about 31,800 queries per second** — about **33x** the exact brute-force search at that recall, and **9–33x** across the 90%+ recall band. The baseline is the honest catch: it runs in parallel across all 48 vCPU while the search runs on one, so the two sides of that ratio are not core-for-core. IVF-PQ trades accuracy for footprint, holding 0.975 recall@10 at 16x memory compression.
 >
 > <sub>[benchmarks/raw/bench_50k_128d.txt](https://github.com/iwang-1/lodestone/blob/main/benchmarks/raw/bench_50k_128d.txt) · single machine, single core, Xeon 8488C · not built: distributed sharding</sub>
 
