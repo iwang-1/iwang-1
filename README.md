@@ -1,62 +1,169 @@
-# Ivan Wang
+<div align="center">
 
-**UMD computer science B.S./M.S.**, Departmental Honors research track, graduating May 2027.<br>
-**SDE intern at AWS** on EC2 Networking, Summer 2026.
+<img width="100%" alt="Ivan Wang — Software Engineer" src="https://capsule-render.vercel.app/api?type=waving&color=0:1C1B18,50:1E4B7A,100:A6431E&height=200&section=header&text=Ivan%20Wang&fontSize=60&fontColor=F5F2EC&animation=fadeIn&fontAlignY=36&desc=Software%20Engineer&descSize=18&descAlignY=57">
 
-Open to Summer 2027 internships and new-grad roles, relocating anywhere in the US.
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://readme-typing-svg.demolab.com/?font=Fira+Code&weight=600&size=19&pause=1200&color=7FB3E0&center=true&vCenter=true&width=700&height=44&lines=I+like+taking+things+apart+to+see+how+they+work;then+building+my+own;SDE+intern+at+AWS%2C+summer+2026;CS+B.S.%2FM.S.+at+UMD+%E2%80%94+graduating+May+2027;Open+to+Summer+2027+internships+and+new-grad+roles">
+  <img alt="I like taking things apart to see how they work, then building my own. SDE intern at AWS, summer 2026. CS B.S./M.S. at UMD, graduating May 2027. Open to Summer 2027 internships and new-grad roles." src="https://readme-typing-svg.demolab.com/?font=Fira+Code&weight=600&size=19&pause=1200&color=1E4B7A&center=true&vCenter=true&width=700&height=44&lines=I+like+taking+things+apart+to+see+how+they+work;then+building+my+own;SDE+intern+at+AWS%2C+summer+2026;CS+B.S.%2FM.S.+at+UMD+%E2%80%94+graduating+May+2027;Open+to+Summer+2027+internships+and+new-grad+roles">
+</picture>
 
-[Portfolio](https://iwang-1.github.io/) · [LinkedIn](https://www.linkedin.com/in/ivanwang1) · [ivanwang8989@gmail.com](mailto:ivanwang8989@gmail.com)
+<p>
+  <img alt="AWS SDE Intern, Summer 2026" src="https://img.shields.io/badge/AWS-SDE_Intern_·_Summer_2026-FF9900?style=for-the-badge&logo=amazonwebservices&logoColor=white">
+  <img alt="UMD Computer Science B.S./M.S., May 2027" src="https://img.shields.io/badge/UMD-CS_B.S.%2FM.S._·_May_2027-1C1B18?style=for-the-badge">
+  <img alt="Open to Summer 2027 internships and new-grad roles" src="https://img.shields.io/badge/Open_to-Summer_2027_·_new_grad-1E4B7A?style=for-the-badge">
+</p>
+<p>
+  <a href="https://iwang-1.github.io/"><img alt="Portfolio: iwang-1.github.io" src="https://img.shields.io/badge/Portfolio-iwang--1.github.io-A6431E?style=for-the-badge&logo=githubpages&logoColor=white"></a>
+  <a href="https://www.linkedin.com/in/ivanwang1"><img alt="LinkedIn: ivanwang1" src="https://img.shields.io/badge/LinkedIn-ivanwang1-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"></a>
+  <a href="mailto:ivanwang8989@gmail.com"><img alt="Email: ivanwang8989@gmail.com" src="https://img.shields.io/badge/Email-ivanwang8989@gmail.com-64625E?style=for-the-badge&logo=maildotru&logoColor=white"></a>
+</p>
 
-## At AWS, Summer 2026
+</div>
 
-On EC2 Networking, I built an autonomous Claude Code agent with custom skills that migrated seven production EC2/VPC canaries from Scala to Java and JUnit 5, reducing per-test migration from about one week to about one day, gated on live integration testing.
+## 👋 About
 
-## What I built
+I like taking things apart to understand how they work, then building my own. Lately that
+has meant **three systems written from scratch** — a Raft key-value store, an LSM storage
+engine, and a vector search engine — each with a test harness I wrote before the thing it
+was meant to judge.
 
-Three systems written from scratch, each measured against a committed benchmark file.
+I'm an **SDE intern at AWS** on EC2 Networking this summer, finishing a **CS B.S./M.S. at
+UMD** on the Departmental Honors research track, and **open to Summer 2027 internships
+and new-grad roles** — I'll relocate anywhere in the US.
 
-### [parallax-kv](https://github.com/iwang-1/parallax-kv) — linearizable key-value store, Go
+Every number below comes from a benchmark committed in the repo it describes, so you can
+re-run it yourself. Where a result is worse than what I compared against, it's published
+anyway.
 
-Raft consensus from scratch: PreVote, ReadIndex linearizable reads, persist-before-send ordering, snapshots, a durable write-ahead log, and a gRPC runtime.
+Outside of work I'm into **mechanical keyboards** — you can customize every part, and
+picking the right one for the job is the fun of it — and **bouldering**, where a problem
+can usually be done a lot of different ways and working out which one costs you the least
+is my favorite part. I also keep up with where the industry is heading, from new hardware
+to how governments are handling AI.
 
-> A deterministic harness replayed partitions, crashes, message loss, delays, and snapshot churn across **2.9M client operations** — zero safety violations, and zero `Illegal` verdicts from the linearizability checker. The first bug it caught was in my own election-safety check, not in the consensus code.
->
-> <sub>[docs/BUG_LEDGER.md](https://github.com/iwang-1/parallax-kv/blob/main/docs/BUG_LEDGER.md) · 3 nodes, 6 simulated clients, virtual time · not built: production snapshot scheduling or chunked streaming</sub>
+<img width="100%" height="4" alt="" src="https://capsule-render.vercel.app/api?type=rect&color=0:1C1B18,50:1E4B7A,100:A6431E&height=4">
 
-### [accretion-db](https://github.com/iwang-1/accretion-db) — crash-safe LSM storage engine, Rust
+## 🚀 What I built
 
-A CRC-framed write-ahead log with group commit, memtables, block-based SSTables with bloom filters, and size-tiered compaction. `unsafe` is forbidden at the crate root, so the engine has no unsafe blocks by construction.
+<table>
+<tr>
+<td width="50%" valign="top">
 
-> A fault-injecting storage layer replays power loss at **330 deterministic crash points** (2,640 executions) plus 160 property-based crash schedules: **zero acknowledged-write loss**, and a **~29x** gain from group commit.
->
-> <sub>[benchmarks/RESULTS.md](https://github.com/iwang-1/accretion-db/blob/main/benchmarks/RESULTS.md) · 16-byte keys, 100-byte values, ext4 on NVMe · compared against sled, which wins every matched comparison on this host · the ~29x is WAL-bound, and compaction runs under the write lock</sub>
+### 🧭 [parallax-kv](https://github.com/iwang-1/parallax-kv)
+**Linearizable key-value store · Go**
 
-### [lodestone](https://github.com/iwang-1/lodestone) — vector search engine, Rust
+Raft from scratch: PreVote, ReadIndex linearizable reads, persist-before-send ordering,
+snapshots, a durable WAL, and a gRPC runtime.
 
-An HNSW proximity graph and an IVF-PQ compressed index over hand-written AVX-512 distance kernels with runtime feature dispatch, for embeddings and RAG retrieval.
+> A deterministic harness replayed partitions, crashes, message loss, delays and snapshot
+> churn across **2.9M client operations** — zero safety violations, and zero `Illegal`
+> verdicts from the linearizability checker. The first bug it caught was in my own
+> election-safety check, not in the consensus code.
 
-> On 50,000 128-dimensional vectors on a single core, HNSW reached **0.976 recall@10 at about 31,800 queries per second** — about **33x** the exact brute-force search at that recall, and **9–33x** across the 90%+ recall band. The baseline is the honest catch: it runs in parallel across all 48 vCPU while the search runs on one, so the two sides of that ratio are not core-for-core. IVF-PQ trades accuracy for footprint, holding 0.975 recall@10 at 16x memory compression.
->
-> <sub>[benchmarks/raw/bench_50k_128d.txt](https://github.com/iwang-1/lodestone/blob/main/benchmarks/raw/bench_50k_128d.txt) · single machine, single core, Xeon 8488C · not built: distributed sharding</sub>
+![Go](https://img.shields.io/badge/Go-00ADD8?style=flat-square&logo=go&logoColor=white)
+![Raft](https://img.shields.io/badge/Raft-1E4B7A?style=flat-square)
+![gRPC](https://img.shields.io/badge/gRPC-64625E?style=flat-square&logo=grpc&logoColor=white)
+![Porcupine](https://img.shields.io/badge/Porcupine-A6431E?style=flat-square)
 
-## Upstream and research
+</td>
+<td width="50%" valign="top">
 
-**Four merged pull requests** to the [UMD Observatory data archive](https://github.com/warnerem/CCD-data-archive/pulls?q=is%3Apr+author%3Aiwang-1+is%3Amerged) — Python, Flask, SQLite, 50,000+ records.
+### 💾 [accretion-db](https://github.com/iwang-1/accretion-db)
+**Crash-safe LSM storage engine · Rust**
 
-**Co-built and open-sourced** a [four-person quantum-NLP research artifact](https://github.com/iwang-1/FIRE-QML-WINNERS-QNLP) — DisCoPy, Qiskit, pytket, JAX. My part was dataset preparation, experiment integration, and documentation.
+A CRC-framed write-ahead log with group commit, memtables, block SSTables with bloom
+filters, and size-tiered compaction. `unsafe` is forbidden at the crate root, so the
+engine has no unsafe blocks by construction.
 
-**One pull request open and under review**: [lambeq #259](https://github.com/Quantinuum/lambeq/pull/259) adds a `LAMBEQ_MODELS_URL` override for model downloads.
+> Power loss is replayed at **330 deterministic crash points** (2,640 executions) plus 160
+> property-based schedules: **zero acknowledged-write loss**, and a **~29x** gain from
+> group commit. Benchmarked against sled, which wins every matched comparison on this
+> host — reported rather than omitted.
 
-## Toolbox
+![Rust](https://img.shields.io/badge/Rust-CE422B?style=flat-square&logo=rust&logoColor=white)
+![LSM tree](https://img.shields.io/badge/LSM_tree-1E4B7A?style=flat-square)
+![group commit](https://img.shields.io/badge/group_commit-64625E?style=flat-square)
+![proptest](https://img.shields.io/badge/proptest-A6431E?style=flat-square)
 
-**Languages** — Python · Java · Go · Rust · TypeScript/JavaScript · Scala · SQL · Bash<br>
-**Distributed & storage** — Raft · gRPC/Protobuf · LSM trees · PostgreSQL/SQLite<br>
-**Backend, web & testing** — Flask/FastAPI · Node.js · JUnit 5 · Playwright<br>
-**ML & NLP** — PyTorch · HuggingFace · scikit-learn · LangChain · JAX · Qiskit · DisCoPy · pytket<br>
-**Cloud & CI** — AWS (EC2/VPC, SDK, CDK, CloudWatch) · Docker · Linux · GitHub Actions · CI/CD · Jenkins
+</td>
+</tr>
+<tr><td colspan="2"></td></tr>
+<tr>
+<td width="50%" valign="top">
 
-## Contact
+### 🧲 [lodestone](https://github.com/iwang-1/lodestone)
+**Vector search engine · Rust**
 
-[ivanwang8989@gmail.com](mailto:ivanwang8989@gmail.com) · [LinkedIn](https://www.linkedin.com/in/ivanwang1) · [more work on the portfolio](https://iwang-1.github.io/projects/)
+An HNSW proximity graph and an IVF-PQ compressed index over hand-written AVX-512 distance
+kernels with runtime feature dispatch, for embeddings and RAG retrieval.
+
+> On 50,000 128-dimensional vectors on one core, HNSW reached **0.976 recall@10 at about
+> 31,800 queries per second** — about **33x** the exact brute-force search at that recall,
+> and **9–33x** across the 90%+ recall band. The honest catch: that baseline runs in
+> parallel across all 48 vCPU while the search runs on one, so the two sides of the ratio
+> aren't core-for-core.
+
+![Rust](https://img.shields.io/badge/Rust-CE422B?style=flat-square&logo=rust&logoColor=white)
+![HNSW](https://img.shields.io/badge/HNSW-1E4B7A?style=flat-square)
+![IVF-PQ](https://img.shields.io/badge/IVF--PQ-64625E?style=flat-square)
+![AVX-512](https://img.shields.io/badge/AVX--512_SIMD-A6431E?style=flat-square)
+
+</td>
+<td width="50%" valign="top">
+
+### 🌍 Upstream & research
+
+![4 merged](https://img.shields.io/badge/merged-×4-2ea043?style=flat-square&logo=git&logoColor=white) **[CCD-data-archive](https://github.com/warnerem/CCD-data-archive/pulls?q=is%3Apr+author%3Aiwang-1+is%3Amerged)**
+
+Four merged pull requests to the UMD Observatory data archive — Python, Flask, SQLite,
+50,000+ records.
+
+![open](https://img.shields.io/badge/open-under_review-d29922?style=flat-square) **[lambeq #259](https://github.com/Quantinuum/lambeq/pull/259)**
+
+One pull request open upstream, adding a `LAMBEQ_MODELS_URL` override for model downloads.
+
+![research](https://img.shields.io/badge/research-1E4B7A?style=flat-square) **[Quantum NLP (FIRE)](https://github.com/iwang-1/FIRE-QML-WINNERS-QNLP)**
+
+A four-person research project, co-built and open-sourced — DisCoPy, Qiskit, pytket, JAX.
+My part was dataset preparation, experiment integration, and documentation.
+
+<sub>The ML, NLP and statistics work is on the
+<a href="https://iwang-1.github.io/projects/">portfolio</a> ↗</sub>
+
+</td>
+</tr>
+</table>
+
+<img width="100%" height="4" alt="" src="https://capsule-render.vercel.app/api?type=rect&color=0:A6431E,50:1E4B7A,100:1C1B18&height=4">
+
+## 🧰 What I work in
+
+**Languages** — Python · Java · Go · Rust · TypeScript/JavaScript · Scala · SQL · Bash
+
+**Systems, backend & testing** — Raft · gRPC/Protobuf · LSM trees · PostgreSQL/SQLite ·
+Flask/FastAPI · Node.js · JUnit 5 · Playwright
+
+**ML, NLP & research** — PyTorch · Hugging Face · scikit-learn · LangChain · JAX ·
+Qiskit · DisCoPy · pytket
+
+**Cloud & CI** — AWS (EC2/VPC, SDK, CDK, CloudWatch) · Docker · Linux · GitHub Actions ·
+Jenkins
+
+<img width="100%" height="4" alt="" src="https://capsule-render.vercel.app/api?type=rect&color=0:1C1B18,50:1E4B7A,100:A6431E&height=4">
+
+<div align="center">
+
+### 📬 Get in touch
+
+I'm looking for **Summer 2027 internships and new-grad software engineering roles**, and
+I'll relocate anywhere in the US. Email is the fastest way to reach me.
+
+<p>
+  <a href="mailto:ivanwang8989@gmail.com"><img alt="Email Ivan" src="https://img.shields.io/badge/Email_me-ivanwang8989@gmail.com-1E4B7A?style=for-the-badge&logo=maildotru&logoColor=white"></a>
+  <a href="https://iwang-1.github.io/"><img alt="Portfolio" src="https://img.shields.io/badge/See_the_work-Portfolio-A6431E?style=for-the-badge&logo=githubpages&logoColor=white"></a>
+  <a href="https://www.linkedin.com/in/ivanwang1"><img alt="LinkedIn" src="https://img.shields.io/badge/Connect-LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"></a>
+</p>
 
 <sub>Resume on request.</sub>
+
+</div>
