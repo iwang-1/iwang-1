@@ -22,9 +22,9 @@
 
 ## 👋 About
 
-I mostly build things to find out how they work. Lately that has meant **three systems
-written from scratch**: a Raft key-value store, an LSM storage engine, and a vector search
-engine. For each one I wrote the test harness before the thing it was meant to judge.
+My recent work is centered on **three systems written from scratch**: a Raft key-value
+store, an LSM storage engine, and a vector search engine. For each one I wrote the test
+harness before the thing it was meant to judge.
 
 I'm an **SDE intern at AWS** on EC2 Networking this summer, finishing a **CS B.S./M.S. at
 UMD** on the Departmental Honors research track, and **open to Summer 2027 internships and
