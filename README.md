@@ -80,8 +80,11 @@ engine has no unsafe blocks by construction.
 > Power loss is replayed at **330 deterministic crash points** (2,640 executions) plus 160
 > property-based schedules: **zero acknowledged-write loss**, and a **~29x** gain from
 > group commit. Atomic multi-key `WriteBatch`es are **all-or-nothing** across another 1,456
-> crash executions, and index-seeking range scans run **81x** faster. Benchmarked against
-> sled, which wins every matched comparison on this host. Reported rather than omitted.
+> crash executions, and index-seeking range scans run **81x** faster. Optional background
+> compaction cuts the worst single-writer stall from 760 ms to 208 ms. Building it surfaced
+> three bugs, each fixed with a regression: one in the engine's crash recovery, a GC race,
+> and one in the crash simulator itself. Benchmarked against sled, which wins every matched
+> comparison on this host. Reported rather than omitted.
 
 ![Rust](https://img.shields.io/badge/Rust-CE422B?style=flat-square&logo=rust&logoColor=white)
 ![LSM tree](https://img.shields.io/badge/LSM_tree-1E4B7A?style=flat-square)
