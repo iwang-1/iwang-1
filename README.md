@@ -58,6 +58,9 @@ snapshots, a durable WAL, and a gRPC runtime.
 > churn across **2.9M client operations**: zero safety violations, and zero `Illegal`
 > verdicts from the linearizability checker. The first bug it caught was in my own
 > election-safety check, not in the consensus code.
+>
+> Batching queued writes into one proposal cut fsyncs from **2.23 to 0.46 per write** and
+> took durable throughput at 64 clients from **102 to 1,408 writes/s** (p99 764 ms → 60 ms).
 
 ![Go](https://img.shields.io/badge/Go-00ADD8?style=flat-square&logo=go&logoColor=white)
 ![Raft](https://img.shields.io/badge/Raft-1E4B7A?style=flat-square)
@@ -76,8 +79,9 @@ engine has no unsafe blocks by construction.
 
 > Power loss is replayed at **330 deterministic crash points** (2,640 executions) plus 160
 > property-based schedules: **zero acknowledged-write loss**, and a **~29x** gain from
-> group commit. Benchmarked against sled, which wins every matched comparison on this
-> host. Reported rather than omitted.
+> group commit. Atomic multi-key `WriteBatch`es are **all-or-nothing** across another 1,456
+> crash executions, and index-seeking range scans run **81x** faster. Benchmarked against
+> sled, which wins every matched comparison on this host. Reported rather than omitted.
 
 ![Rust](https://img.shields.io/badge/Rust-CE422B?style=flat-square&logo=rust&logoColor=white)
 ![LSM tree](https://img.shields.io/badge/LSM_tree-1E4B7A?style=flat-square)
@@ -93,19 +97,23 @@ engine has no unsafe blocks by construction.
 ### 🧲 [lodestone](https://github.com/iwang-1/lodestone)
 **Vector search engine · Rust**
 
-An HNSW proximity graph and an IVF-PQ compressed index over hand-written AVX-512 distance
-kernels with runtime feature dispatch, for embeddings and RAG retrieval.
+An HNSW proximity graph and an IVF-PQ compressed index over hand-written AVX-512 and ARM
+NEON distance kernels with runtime feature dispatch, for embeddings and RAG retrieval.
 
 > On 50,000 128-dimensional vectors on one core, HNSW reached **0.976 recall@10 at about
 > 31,800 queries per second**, about **33x** the exact brute-force search at that recall,
 > and **9–33x** across the 90%+ recall band. The honest catch: that baseline runs in
 > parallel across all 48 vCPU while the search runs on one, so the two sides of the ratio
 > aren't core-for-core.
+>
+> On Apple Silicon, the NEON kernels are **6–12x faster** per distance call than scalar code
+> and cut HNSW index build time from 30.3 s to 8.9 s, at identical recall.
 
 ![Rust](https://img.shields.io/badge/Rust-CE422B?style=flat-square&logo=rust&logoColor=white)
 ![HNSW](https://img.shields.io/badge/HNSW-1E4B7A?style=flat-square)
 ![IVF-PQ](https://img.shields.io/badge/IVF--PQ-64625E?style=flat-square)
 ![AVX-512](https://img.shields.io/badge/AVX--512_SIMD-A6431E?style=flat-square)
+![NEON](https://img.shields.io/badge/NEON_SIMD-A6431E?style=flat-square)
 
 </td>
 <td width="50%" valign="top">
@@ -120,6 +128,16 @@ Four merged pull requests to the UMD Observatory data archive, in Python, Flask 
 ![open](https://img.shields.io/badge/open-under_review-d29922?style=flat-square) **[lambeq #259](https://github.com/Quantinuum/lambeq/pull/259)**
 
 One pull request open upstream, adding a `LAMBEQ_MODELS_URL` override for model downloads.
+
+![open](https://img.shields.io/badge/open-under_review-d29922?style=flat-square) **Big-tech open source**
+
+Bug fixes under review at
+[Meta RocksDB](https://github.com/meta/rocksdb/pull/15675) (a flush crash caused by
+`SetOptions()` skipping validation),
+[Google Abseil](https://github.com/abseil/abseil-cpp/pull/2501) (a constructor overload bug),
+[Apple SwiftNIO](https://github.com/apple/swift-nio/pull/3791) (a flaky test's thread race), and
+[Microsoft mimalloc](https://github.com/microsoft/mimalloc/pull/1491) (undefined behavior in
+`free(NULL)` found with UBSan). Each one reproduced before fixing.
 
 ![research](https://img.shields.io/badge/research-1E4B7A?style=flat-square) **[Quantum NLP (FIRE)](https://github.com/iwang-1/FIRE-QML-WINNERS-QNLP)**
 
