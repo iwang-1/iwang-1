@@ -61,6 +61,8 @@ snapshots, a durable WAL, and a gRPC runtime.
 >
 > Batching queued writes into one proposal cut fsyncs from **2.23 to 0.46 per write** and
 > took durable throughput at 64 clients from **102 to 1,408 writes/s** (p99 764 ms → 60 ms).
+> Production log compaction keeps each node at about 1.3 MB on disk instead of 11.5 MB, and a
+> follower that falls behind catches up through `InstallSnapshot`.
 
 ![Go](https://img.shields.io/badge/Go-00ADD8?style=flat-square&logo=go&logoColor=white)
 ![Raft](https://img.shields.io/badge/Raft-1E4B7A?style=flat-square)
@@ -110,7 +112,8 @@ NEON distance kernels with runtime feature dispatch, for embeddings and RAG retr
 > aren't core-for-core.
 >
 > On Apple Silicon, the NEON kernels are **6–12x faster** per distance call than scalar code
-> and cut HNSW index build time from 30.3 s to 8.9 s, at identical recall.
+> and cut HNSW index build time from 30.3 s to 8.9 s, at identical recall. Both index types
+> save to checksummed files that reload in under 100 ms instead of seconds of rebuilding.
 
 ![Rust](https://img.shields.io/badge/Rust-CE422B?style=flat-square&logo=rust&logoColor=white)
 ![HNSW](https://img.shields.io/badge/HNSW-1E4B7A?style=flat-square)
@@ -134,13 +137,17 @@ One pull request open upstream, adding a `LAMBEQ_MODELS_URL` override for model 
 
 ![open](https://img.shields.io/badge/open-under_review-d29922?style=flat-square) **Big-tech open source**
 
+**Microsoft mimalloc:** found undefined behavior in `free(NULL)` on ARM with UBSan and
+[reported it with a fix](https://github.com/microsoft/mimalloc/pull/1491); the maintainer
+fixed it upstream crediting the PR
+([`9743b25`](https://github.com/microsoft/mimalloc/commit/9743b2588)).
+
 Bug fixes under review at
 [Meta RocksDB](https://github.com/meta/rocksdb/pull/15675) (a flush crash caused by
 `SetOptions()` skipping validation),
 [Google Abseil](https://github.com/abseil/abseil-cpp/pull/2501) (a constructor overload bug),
-[Apple SwiftNIO](https://github.com/apple/swift-nio/pull/3791) (a flaky test's thread race), and
-[Microsoft mimalloc](https://github.com/microsoft/mimalloc/pull/1491) (undefined behavior in
-`free(NULL)` found with UBSan). Each one reproduced before fixing.
+and [Apple SwiftNIO](https://github.com/apple/swift-nio/pull/3791) (a flaky test's thread
+race). Each one reproduced before fixing.
 
 ![research](https://img.shields.io/badge/research-1E4B7A?style=flat-square) **[Quantum NLP (FIRE)](https://github.com/iwang-1/FIRE-QML-WINNERS-QNLP)**
 
