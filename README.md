@@ -167,7 +167,7 @@ My part was dataset preparation, experiment integration, and documentation.
 |---|---|
 | [**relaybench**](https://github.com/iwang-1/relaybench) · Python | An execution lab for tool-using AI agents: inject faults like a lost acknowledgment, compare agent policies on identical runs, and replay decisions deterministically. |
 | [**spillway-join**](https://github.com/iwang-1/spillway-join) · Rust | An external-memory equijoin under a fixed memory budget, with skew recovery, checked against SQLite on every output row. |
-| [**batchwindow**](https://github.com/iwang-1/batchwindow) · Python | A deadline-aware inference-batching simulator, measured against an exact offline optimum. |
+| [**batchwindow**](https://github.com/iwang-1/batchwindow) · Python | A deadline-aware inference-batching simulator; on small traces, each policy is measured against an exact offline optimum. |
 | [**leasepost**](https://github.com/iwang-1/leasepost) · Python | A durable job queue with fenced leases, so a paused worker can never publish a stale result; tested by killing real worker processes. |
 | [**minuteledger**](https://github.com/iwang-1/minuteledger) · Python | Event-time window aggregation that handles late corrections and deletions after a window is published, via a replayable changelog. |
 | [**testtrail**](https://github.com/iwang-1/testtrail) · Python | Picks the Python tests a Git change could affect and prints the import path that explains each choice. |
